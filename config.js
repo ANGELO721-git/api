@@ -12,6 +12,7 @@ let config = {
 
 app.use(express.json());
 
+// Ici on ne met PAS /api car Vercel le gère déjà
 app.get("/config", (_, res) => {
   res.json(config);
 });
